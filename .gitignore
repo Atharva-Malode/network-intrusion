@@ -1,0 +1,299 @@
+# =========================================================
+# Node.js / Next.js
+# =========================================================
+
+node_modules/
+**/node_modules/
+
+.next/
+**/.next/
+
+out/
+**/out/
+
+dist/
+**/dist/
+
+build/
+**/build/
+
+.swc/
+**/.swc/
+
+.turbo/
+**/.turbo/
+
+.vercel/
+**/.vercel/
+
+# Node caches
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# =========================================================
+# Python / FastAPI / uv
+# =========================================================
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Python compiled extensions
+*.so
+
+# Virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+ENV/
+**/ENV/
+
+# Python packaging/build output
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Python build artifacts
+.pybuild/
+site/
+
+# uv / Python cache
+.uv-cache/
+**/.uv-cache/
+
+# pip cache
+.pip-cache/
+
+# =========================================================
+# Python tooling caches
+# =========================================================
+
+# Pytest
+.pytest_cache/
+**/.pytest_cache/
+
+# MyPy
+.mypy_cache/
+**/.mypy_cache/
+
+# Ruff
+.ruff_cache/
+**/.ruff_cache/
+
+# Pyright
+.pyright/
+.pyrightcache/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+**/coverage/
+.nyc_output/
+
+# =========================================================
+# Environment / Secrets
+# =========================================================
+
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Keep example/template env files
+!.env.example
+!**/.env.example
+!.env.sample
+!**/.env.sample
+!.env.template
+!**/.env.template
+
+# =========================================================
+# Logs
+# =========================================================
+
+*.log
+logs/
+**/logs/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================================================
+# TypeScript
+# =========================================================
+
+*.tsbuildinfo
+next-env.d.ts
+
+# =========================================================
+# General caches
+# =========================================================
+
+.cache/
+**/.cache/
+
+.eslintcache
+.stylelintcache
+
+# =========================================================
+# Temporary files
+# =========================================================
+
+tmp/
+**/tmp/
+
+temp/
+**/temp/
+
+.tmp/
+**/.tmp/
+
+*.tmp
+*.temp
+
+# =========================================================
+# macOS
+# =========================================================
+
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# Finder metadata
+.Spotlight-V100
+.Trashes
+
+# macOS folder metadata
+.fseventsd
+
+# =========================================================
+# Windows
+# =========================================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================================================
+# Linux
+# =========================================================
+
+*~
+.directory
+
+# =========================================================
+# VS Code
+# =========================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# =========================================================
+# JetBrains IDEs
+# =========================================================
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# =========================================================
+# Vim / Swap files
+# =========================================================
+
+*.swp
+*.swo
+*.swn
+
+# =========================================================
+# Backup files
+# =========================================================
+
+*.bak
+*.backup
+*.orig
+*.old
+
+# =========================================================
+# Local database files
+# =========================================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+# Uncomment if your project intentionally commits SQLite DBs
+# !backend/data/example.db
+
+# =========================================================
+# Runtime / PID files
+# =========================================================
+
+*.pid
+*.pid.lock
+
+# =========================================================
+# Celery / task queues if added later
+# =========================================================
+
+celerybeat-schedule
+celerybeat.pid
+
+# =========================================================
+# Jupyter
+# =========================================================
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# =========================================================
+# Docker local overrides
+# =========================================================
+
+docker-compose.override.yml
+compose.override.yml
+
+# =========================================================
+# Misc generated files
+# =========================================================
+
+*.cache
+*.dump
+
+# =========================================================
+# IMPORTANT: DO NOT IGNORE THESE
+# =========================================================
+
+# Keep dependency lock files committed:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+# uv.lock
+# pyproject.toml
+# package.json

@@ -1,0 +1,9 @@
+[project]
+name = "capture-proxy"
+version = "0.1.0"
+description = "Reverse-proxy traffic sensor: forwards to the demo site and streams NSL-KDD feature records to the backend"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.10.0",
+]

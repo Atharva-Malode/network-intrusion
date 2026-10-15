@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #141414;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

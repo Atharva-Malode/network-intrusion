@@ -1,0 +1,263 @@
+{
+  "dataset": "NSL-KDD (KDDTrain+ / KDDTest+)",
+  "model": "RandomForestClassifier(n_estimators=600, max_features=log2, class_weight=balanced_subsample)",
+  "classes": [
+    "Normal",
+    "DoS",
+    "Probe",
+    "R2L",
+    "U2R"
+  ],
+  "test_accuracy": 0.7456,
+  "test_macro_f1": 0.5372,
+  "per_class": {
+    "Normal": {
+      "precision": 0.6415299064152991,
+      "recall": 0.9741530223457935,
+      "f1-score": 0.7736026495481866,
+      "support": 9711.0
+    },
+    "DoS": {
+      "precision": 0.9610980127989222,
+      "recall": 0.7650134048257373,
+      "f1-score": 0.851918196745783,
+      "support": 7460.0
+    },
+    "Probe": {
+      "precision": 0.8709872804360993,
+      "recall": 0.593969434118133,
+      "f1-score": 0.706286836935167,
+      "support": 2421.0
+    },
+    "R2L": {
+      "precision": 0.9898477157360406,
+      "recall": 0.06759098786828423,
+      "f1-score": 0.12654120700843607,
+      "support": 2885.0
+    },
+    "U2R": {
+      "precision": 0.75,
+      "recall": 0.13432835820895522,
+      "f1-score": 0.22784810126582278,
+      "support": 67.0
+    },
+    "macro avg": {
+      "precision": 0.8426925830772722,
+      "recall": 0.5070110414733807,
+      "f1-score": 0.537239398300679,
+      "support": 22544.0
+    },
+    "weighted avg": {
+      "precision": 0.8168164018148155,
+      "recall": 0.7456085876508162,
+      "f1-score": 0.7078611921003445,
+      "support": 22544.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Normal",
+      "DoS",
+      "Probe",
+      "R2L",
+      "U2R"
+    ],
+    "matrix": [
+      [
+        9460,
+        67,
+        183,
+        0,
+        1
+      ],
+      [
+        1728,
+        5707,
+        25,
+        0,
+        0
+      ],
+      [
+        819,
+        164,
+        1438,
+        0,
+        0
+      ],
+      [
+        2683,
+        0,
+        5,
+        195,
+        2
+      ],
+      [
+        56,
+        0,
+        0,
+        2,
+        9
+      ]
+    ]
+  },
+  "train_rows": 146025,
+  "test_rows": 22544,
+  "synthetic_augmentation": {
+    "enabled": true,
+    "train_rows_added": {
+      "Normal": 0,
+      "DoS": 0,
+      "Probe": 0,
+      "R2L": 8000,
+      "U2R": 6000
+    },
+    "note": "Sensor-shape rows mirror capture-proxy/feature_extractor.py output; added to TRAINING ONLY (KDDTest+ headline stays honest)."
+  },
+  "synthetic_holdout": {
+    "DoS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "Normal": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 1.0
+    },
+    "Probe": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "R2L": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2000.0
+    },
+    "U2R": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1500.0
+    },
+    "accuracy": 0.9994290608050242,
+    "macro avg": {
+      "precision": 0.4666666666666666,
+      "recall": 0.6,
+      "f1-score": 0.5,
+      "support": 3503.0
+    },
+    "weighted avg": {
+      "precision": 0.9992387477400323,
+      "recall": 0.9994290608050242,
+      "f1-score": 0.9992863260062803,
+      "support": 3503.0
+    }
+  },
+  "live_holdout": {
+    "rows": 2593,
+    "accuracy": 0.9988,
+    "macro_f1": 0.9952,
+    "per_class": {
+      "Normal": {
+        "precision": 0.9848484848484849,
+        "recall": 0.9701492537313433,
+        "f1-score": 0.9774436090225563,
+        "support": 67.0
+      },
+      "DoS": {
+        "precision": 0.9983361064891847,
+        "recall": 1.0,
+        "f1-score": 0.9991673605328892,
+        "support": 1200.0
+      },
+      "Probe": {
+        "precision": 1.0,
+        "recall": 0.9991474850809889,
+        "f1-score": 0.9995735607675906,
+        "support": 1173.0
+      },
+      "R2L": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 112.0
+      },
+      "U2R": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 41.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "Normal",
+        "DoS",
+        "Probe",
+        "R2L",
+        "U2R"
+      ],
+      "matrix": [
+        [
+          65,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1200,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1172,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          112,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          41
+        ]
+      ]
+    },
+    "note": "Model-only verdicts on REAL capture-proxy records held out from training (newest 30% of each recorded class, in time order) plus held-out captured events of each learned class."
+  },
+  "live_recording": {
+    "used": true,
+    "classes_from_recording": [
+      "DoS",
+      "Normal",
+      "Probe",
+      "R2L",
+      "U2R"
+    ],
+    "train_rows": 6052
+  },
+  "novelty_detector": {
+    "threshold": 1.2476528394289812,
+    "fitted_rows": 6052,
+    "holdout_outlier_rate": 0.1199
+  },
+  "sklearn_version": "1.9.1",
+  "trained_at": "2026-10-15T13:04:25"
+}

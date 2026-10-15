@@ -1,0 +1,11 @@
+data/
+artifacts/*.joblib
+# ...but DO ship the default pretrained model (compressed ~35MB) + its novelty
+# detector, so a fresh clone works without retraining. The _prev backups stay
+# ignored (large / machine-local).
+!artifacts/model.joblib
+!artifacts/novelty.joblib
+__pycache__/
+*.pyc
+.venv/
+artifacts/metrics_prev.json

@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "dst_host_same_src_port_rate",
+    "importance": 0.05587
+  },
+  {
+    "feature": "diff_srv_rate",
+    "importance": 0.0502
+  },
+  {
+    "feature": "log_src_bytes",
+    "importance": 0.04969
+  },
+  {
+    "feature": "src_bytes",
+    "importance": 0.04201
+  },
+  {
+    "feature": "duration",
+    "importance": 0.03681
+  },
+  {
+    "feature": "log_duration",
+    "importance": 0.0353
+  },
+  {
+    "feature": "dst_host_diff_srv_rate",
+    "importance": 0.03491
+  },
+  {
+    "feature": "content_score",
+    "importance": 0.03482
+  },
+  {
+    "feature": "log_dst_host_srv_count",
+    "importance": 0.0332
+  },
+  {
+    "feature": "same_srv_rate",
+    "importance": 0.0329
+  },
+  {
+    "feature": "dst_bytes",
+    "importance": 0.03224
+  },
+  {
+    "feature": "log_dst_bytes",
+    "importance": 0.0299
+  },
+  {
+    "feature": "dst_host_srv_count",
+    "importance": 0.02879
+  },
+  {
+    "feature": "dst_host_same_srv_rate",
+    "importance": 0.02542
+  },
+  {
+    "feature": "count",
+    "importance": 0.02202
+  }
+]
